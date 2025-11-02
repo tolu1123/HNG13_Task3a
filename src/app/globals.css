@@ -128,3 +128,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .hero-bg {
+    @apply bg-[url('/images/image-header-mobile.jpg')] sm:bg-[url('/images/image-header-tablet.jpg')] bg-cover bg-bottom lg:bg-none
+  }
+  .container {
+    @apply w-full lg:max-w-[1110px] [@media(min-width:1440px)]:max-w-[1440px] mx-auto px-5
+  }
+}

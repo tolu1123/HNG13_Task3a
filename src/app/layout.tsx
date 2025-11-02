@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import AppHeader from "@/components/AppHeader";
+import AppFooter from "@/components/AppFooter";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -22,7 +24,9 @@ export default function RootLayout({
       <body
         className={`${manrope.variable} antialiased`}
       >
+        {/* <AppHeader /> */}
         {children}
+        <AppFooter />
       </body>
     </html>
   );
