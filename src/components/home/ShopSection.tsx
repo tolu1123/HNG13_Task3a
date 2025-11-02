@@ -7,8 +7,8 @@ import Link from "next/link";
 import { ChevronRight } from "@/icons";
 function ShopSection() {
   return (
-    <section className='w-full font-manrope'>
-      <div className='container grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-[calc(20px/3)] lg:gap-5 pt-10 pb-30 sm:py-24 lg:pt-30 lg:pb-42'>
+    <section className='w-full font-manrope mt-10 mb-30 sm:my-24 lg:mt-30 lg:mb-42'>
+      <div className='container grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-[calc(20px/3)] lg:gap-5'>
         {/* Shop section content goes here */}
         <div className='relative flex flex-col items-center justify-center'>
           <div className='relative w-1/2 aspect-square -mb-3 sm:-mb-1 lg:-mb-5'>

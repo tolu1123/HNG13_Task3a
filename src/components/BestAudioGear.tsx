@@ -6,7 +6,7 @@ import BestGearImgSm from '@/assets/shared/mobile/image-best-gear.jpg';
 
 function BestAudioGear() {
   return (
-    <section className="w-full font-manrope py-30 sm:py-24 lg:py-50">
+    <section className="w-full font-manrope my-30 sm:my-24 lg:my-50">
       <div className="container flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-7.5 lg:items-center">
         <div className="flex justify-center lg:justify-start ">
           <div className="space-y-8 sm:max-w-[573px] lg:max-w-111.25">
