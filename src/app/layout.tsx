@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 
 const manrope = Manrope({
