@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Z89Speaker from "@/assets/home/desktop/image-speaker-zx9.png";
 import PatternCircles from "@/assets/home/desktop/pattern-circles.svg";
-import { Link } from "lucide-react";
+import { Link } from "next/link";
 
 function ZX9SpeakerStore() {
   return (
