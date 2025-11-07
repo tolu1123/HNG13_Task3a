@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import ZX7SpeakerLg from "@/assets/home/desktop/image-speaker-zx7.jpg";
 import ZX7SpeakerMd from "@/assets/home/tablet/image-speaker-zx7.jpg";
 import ZX7SpeakerSm from "@/assets/home/mobile/image-speaker-zx7.jpg";
@@ -31,7 +32,9 @@ function ZX7SpeakerStore() {
           </div>
           <div className='pl-6 sm:pl-15 lg:pl-24 absolute top-1/2 -translate-y-1/2 z-6 flex flex-col gap-8 '>
             <h3 className='text-[1.75rem]/[100%] font-bold tracking-[0.125rem] uppercase text-black justify-start'>ZX7 SPEAKER</h3>
-            <Button variant='outline'>SEE PRODUCT</Button>
+            <Button variant='outline'>
+              <Link href="/speakers/zx7-speaker">SEE PRODUCT</Link>
+            </Button>
           </div>
         </div>
       </div>

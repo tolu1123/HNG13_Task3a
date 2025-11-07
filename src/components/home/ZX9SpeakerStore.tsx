@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Z89Speaker from "@/assets/home/desktop/image-speaker-zx9.png";
 import PatternCircles from "@/assets/home/desktop/pattern-circles.svg";
+import { Link } from "lucide-react";
 
 function ZX9SpeakerStore() {
   return (
@@ -32,7 +33,9 @@ function ZX9SpeakerStore() {
               <p className='text-[0.9375rem]/[1.5625rem] text-white/75 justify-start sm:mt-6 sm:mb-10'>
                 Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
               </p>
-              <Button className='' variant="secondary">SEE PRODUCT</Button>
+              <Button className='' variant="secondary" asChild>
+                <Link href="/speakers/zx9-speaker">SEE PRODUCT</Link>
+              </Button>
             </div>
 
           </div>

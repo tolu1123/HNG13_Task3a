@@ -2,6 +2,7 @@ import YX1EarphonesLg from '@/assets/home/desktop/image-earphones-yx1.jpg'
 import YX1EarphonesMd from '@/assets/home/tablet/image-earphones-yx1.jpg'
 import YX1EarphonesSm from '@/assets/home/mobile/image-earphones-yx1.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 function YX1Earphones() {
@@ -30,7 +31,9 @@ function YX1Earphones() {
         </div>
         <div className="bg-gray w-full aspect-21/12 sm:aspect-21/20 lg:aspect-34/20 rounded-lg overflow-hidden flex flex-col gap-8 justify-center pl-6 md:pl-10 lg:pl-16">
           <h3 className='text-[1.75rem]/[100%] font-bold tracking-[0.125rem] uppercase text-black justify-start'>YX1 Earphones</h3>
-          <Button variant='outline'>SEE PRODUCT</Button>
+          <Button variant='outline'>
+            <Link href="/earphones/yx1-earphones">SEE PRODUCT</Link>
+          </Button>
         </div>
       </div>
     </section>
