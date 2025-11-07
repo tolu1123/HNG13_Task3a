@@ -1,36 +1,489 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HNG13_TASK3a
+# [🚀 Visit Audiophile](https://audiophilic-xi.vercel.app/)
 
-## Getting Started
 
-First, run the development server:
+A Next project created for HNG 13 Task 3a.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Project Overview
+
+This project is a frontend application built with React (and any supporting libraries) that fulfils the second task in the HNG 13 stream. The codebase uses modern tooling and is structured for clarity and maintainability.
+
+## 🧰 Tech Stack
+
+- React 19  
+- Next 16
+- Typescript
+- Shadcn
+- Any other tooling your repo uses (e.g., ESLint, Prettier)  
+- Configuration files: `package.json`, `.gitignore`, etc.  
+- Directory structure:
+    ``` bash
+   public/
+    ├── assets/
+        ├── cart/
+            ├── image-xx59-headphones.jpg
+            ├── image-xx99-mark-one-headphones.jpg
+            ├── image-xx99-mark-two-headphones.jpg
+            ├── image-yx1-earphones.jpg
+            ├── image-zx7-speaker.jpg
+            └── image-zx9-speaker.jpg
+        ├── checkout/
+            ├── icon-cash-on-delivery.svg
+            └── icon-order-confirmation.svg
+        ├── home/
+            ├── desktop/
+                ├── cash.svg
+                ├── check.png
+                ├── image-earphones-yx1.jpg
+                ├── image-hero.jpg
+                ├── image-removebg-preview.png
+                ├── image-speaker-zx7.jpg
+                ├── image-speaker-zx9.png
+                ├── image-speaker-zx9.svg
+                └── pattern-circles.svg
+            ├── mobile/
+                ├── image-earphones-yx1.jpg
+                ├── image-header.jpg
+                ├── image-speaker-zx7.jpg
+                └── image-speaker-zx9.png
+            └── tablet/
+                ├── image-earphones-yx1.jpg
+                ├── image-header.jpg
+                ├── image-speaker-zx7.jpg
+                └── image-speaker-zx9.png
+        ├── product-xx59-headphones/
+            ├── desktop/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            ├── mobile/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            └── tablet/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+        ├── product-xx99-mark-one-headphones/
+            ├── desktop/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            ├── mobile/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            └── tablet/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+        ├── product-xx99-mark-two-headphones/
+            ├── desktop/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            ├── mobile/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            └── tablet/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+        ├── product-yx1-earphones/
+            ├── desktop/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            ├── mobile/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            └── tablet/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+        ├── product-zx7-speaker/
+            ├── desktop/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            ├── mobile/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            └── tablet/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+        ├── product-zx9-speaker/
+            ├── desktop/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            ├── mobile/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+            └── tablet/
+                ├── image-category-page-preview.jpg
+                ├── image-gallery-1.jpg
+                ├── image-gallery-2.jpg
+                ├── image-gallery-3.jpg
+                └── image-product.jpg
+        ├── shared/
+            ├── desktop/
+                ├── icon-arrow-right.svg
+                ├── icon-cart.svg
+                ├── icon-facebook.svg
+                ├── icon-instagram.svg
+                ├── icon-twitter.svg
+                ├── image-best-gear.jpg
+                ├── image-category-thumbnail-earphones.png
+                ├── image-category-thumbnail-headphones.png
+                ├── image-category-thumbnail-speakers.png
+                ├── image-xx59-headphones.jpg
+                ├── image-xx99-mark-one-headphones.jpg
+                ├── image-xx99-mark-two-headphones.jpg
+                ├── image-zx7-speaker.jpg
+                ├── image-zx9-speaker.jpg
+                └── logo.svg
+            ├── mobile/
+                ├── image-best-gear.jpg
+                ├── image-xx59-headphones.jpg
+                ├── image-xx99-mark-one-headphones.jpg
+                ├── image-xx99-mark-two-headphones.jpg
+                ├── image-zx7-speaker.jpg
+                └── image-zx9-speaker.jpg
+            └── tablet/
+                ├── icon-hamburger.svg
+                ├── image-best-gear.jpg
+                ├── image-xx59-headphones.jpg
+                ├── image-xx99-mark-one-headphones.jpg
+                ├── image-xx99-mark-two-headphones.jpg
+                ├── image-zx7-speaker.jpg
+                └── image-zx9-speaker.jpg
+        ├── carts.svg
+        ├── db.json
+        ├── favicon-32x32.png
+        ├── hamburger.svg
+        ├── headphone.svg
+        ├── headphones.png
+        ├── logo.svg
+        ├── man.png
+        └── react.svg
+    └── images/
+        ├── image-header-mobile.jpg
+        └── image-header-tablet.jpg
+  src/
+      ├── app/
+          ├── (products)/
+              ├── [category]/
+                  ├── [product]/
+                      └── page.tsx
+                  └── page.tsx
+              └── layout.tsx
+          ├── checkout/
+              └── page.tsx
+          ├── favicon.ico
+          ├── globals.css
+          ├── layout.tsx
+          └── page.tsx
+      ├── assets/
+          ├── cart/
+              ├── image-xx59-headphones.jpg
+              ├── image-xx99-mark-one-headphones.jpg
+              ├── image-xx99-mark-two-headphones.jpg
+              ├── image-yx1-earphones.jpg
+              ├── image-zx7-speaker.jpg
+              └── image-zx9-speaker.jpg
+          ├── checkout/
+              ├── icon-cash-on-delivery.svg
+              └── icon-order-confirmation.svg
+          ├── home/
+              ├── desktop/
+                  ├── cash.svg
+                  ├── check.png
+                  ├── image-earphones-yx1.jpg
+                  ├── image-hero.jpg
+                  ├── image-removebg-preview.png
+                  ├── image-speaker-zx7.jpg
+                  ├── image-speaker-zx9.png
+                  ├── image-speaker-zx9.svg
+                  └── pattern-circles.svg
+              ├── mobile/
+                  ├── image-earphones-yx1.jpg
+                  ├── image-header.jpg
+                  ├── image-speaker-zx7.jpg
+                  └── image-speaker-zx9.png
+              └── tablet/
+                  ├── image-earphones-yx1.jpg
+                  ├── image-header.jpg
+                  ├── image-speaker-zx7.jpg
+                  └── image-speaker-zx9.png
+          ├── product-xx59-headphones/
+              ├── desktop/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              ├── mobile/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              └── tablet/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+          ├── product-xx99-mark-one-headphones/
+              ├── desktop/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              ├── mobile/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              └── tablet/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+          ├── product-xx99-mark-two-headphones/
+              ├── desktop/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              ├── mobile/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              └── tablet/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+          ├── product-yx1-earphones/
+              ├── desktop/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              ├── mobile/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              └── tablet/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+          ├── product-zx7-speaker/
+              ├── desktop/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              ├── mobile/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              └── tablet/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+          ├── product-zx9-speaker/
+              ├── desktop/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              ├── mobile/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+              └── tablet/
+                  ├── image-category-page-preview.jpg
+                  ├── image-gallery-1.jpg
+                  ├── image-gallery-2.jpg
+                  ├── image-gallery-3.jpg
+                  └── image-product.jpg
+          ├── shared/
+              ├── desktop/
+                  ├── earphones.png
+                  ├── headphones.png
+                  ├── icon-arrow-right.svg
+                  ├── icon-cart.svg
+                  ├── icon-facebook.svg
+                  ├── icon-instagram.svg
+                  ├── icon-twitter.svg
+                  ├── image-best-gear.jpg
+                  ├── image-xx59-headphones.jpg
+                  ├── image-xx99-mark-one-headphones.jpg
+                  ├── image-xx99-mark-two-headphones.jpg
+                  ├── image-zx7-speaker.jpg
+                  ├── image-zx9-speaker.jpg
+                  ├── logo.svg
+                  └── speakers.png
+              ├── mobile/
+                  ├── image-best-gear.jpg
+                  ├── image-xx59-headphones.jpg
+                  ├── image-xx99-mark-one-headphones.jpg
+                  ├── image-xx99-mark-two-headphones.jpg
+                  ├── image-zx7-speaker.jpg
+                  └── image-zx9-speaker.jpg
+              └── tablet/
+                  ├── icon-hamburger.svg
+                  ├── image-best-gear.jpg
+                  ├── image-xx59-headphones.jpg
+                  ├── image-xx99-mark-one-headphones.jpg
+                  ├── image-xx99-mark-two-headphones.jpg
+                  ├── image-zx7-speaker.jpg
+                  └── image-zx9-speaker.jpg
+          ├── carts.svg
+          ├── db.json
+          ├── favicon-32x32.png
+          ├── hamburger.svg
+          ├── headphone.svg
+          ├── headphones.png
+          ├── logo.svg
+          ├── man.png
+          └── react.svg
+      ├── components/
+          ├── cart/
+              └── CartDialog.tsx
+          ├── checkout/
+              ├── CheckOutForm.tsx
+              ├── FormContainer.tsx
+              ├── Summary.tsx
+              ├── SummaryCashCalculation.tsx
+              └── SummaryProductCard.tsx
+          ├── headphones/
+              ├── Hero.tsx
+              ├── Products.tsx
+              └── ProductsComponent.tsx
+          ├── home/
+              ├── Hero.tsx
+              ├── ShopSection.tsx
+              ├── YX1Earphones.tsx
+              ├── ZX7SpeakerStore.tsx
+              └── ZX9SpeakerStore.tsx
+          ├── sharedUI/
+              ├── AddToCartContainer.tsx
+              ├── CounterButton.tsx
+              ├── ProductFeaturesAndSpecs.tsx
+              ├── ProductGallery.tsx
+              ├── ProductHero.tsx
+              └── ProductRecommendation.tsx
+          ├── ui/
+              ├── button.tsx
+              ├── dialog.tsx
+              ├── field.tsx
+              ├── input.tsx
+              ├── label.tsx
+              ├── radio-group.tsx
+              ├── separator.tsx
+              └── sheet.tsx
+          ├── AppFooter.tsx
+          ├── AppHeader.tsx
+          └── BestAudioGear.tsx
+      ├── hooks/
+          └── useCartStore.ts
+      ├── lib/
+          ├── types.ts
+          └── utils.ts
+      └── icons.tsx
+  .gitignore
+  components.json
+  eslint.config.mjs
+  next.config.ts
+  package-lock.json
+  package.json
+  postcss.config.mjs
+  README.md
+  tsconfig.json
+    ```
+  
+## 📦 Installation
+
+1. Clone the repository  
+ ```bash
+ git clone https://github.com/tolu1123/HNG13_TASK3a.git
+ cd HNG13_TASK3a
 ```
+2. Install dependencies
+   ``` bash
+   npm install
+   ```
+3. 📦 Build & Production
+  To build the project for production:
+  ``` bash
+  npm run build
+  ```
+4. Local development
+  ``` bash
+  npm run dev
+  ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  Thank you for checking out this project. Happy coding! 🎉
