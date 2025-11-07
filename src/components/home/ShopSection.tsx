@@ -26,7 +26,7 @@ function ShopSection() {
             </p>
             <Button variant='ghost' asChild>
               <Link
-                href='#'
+                href='/headphones'
                 className='uppercase text-[0.8125rem]/[100%] font-bold tracking-[0.0625rem]'
               >
                 SHOP
@@ -53,7 +53,7 @@ function ShopSection() {
             </p>
             <Button variant='ghost' asChild>
               <Link
-                href='#'
+                href='/speakers'
                 className='uppercase text-[0.8125rem]/[100%] font-bold tracking-[0.0625rem]'
               >
                 SHOP
@@ -80,7 +80,7 @@ function ShopSection() {
             </p>
             <Button variant='ghost' asChild>
               <Link
-                href='#'
+                href='/earphones'
                 className='uppercase text-[0.8125rem]/[100%] font-bold tracking-[0.0625rem]'
               >
                 SHOP
